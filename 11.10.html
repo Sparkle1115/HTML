@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Transition动画</title>
+		<style>
+			.box1{
+				width: 50px;
+				height: 54px;
+				background:#0088CC;
+				transition: width 0.4s;
+				display: flex;	
+			}
+			.box2{
+				width: 50px;
+				height: 54px;
+				background: #E74C3C;
+				transition: width 0.6s;
+				display: flex;
+			}
+			.box1:hover{
+				width: 200px;
+			}
+			.box2:hover{
+				width: 200px;
+			}
+			.word{
+				overflow: hidden;
+				white-space: nowrap;
+				transition:0.6s;
+				padding-top: 17px;
+				padding-left: 5px;	
+			}		
+			.img{
+			    width: 40px;
+				height: 40px;
+				padding-top: 7px;
+				margin-right: 5px;
+			}			
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<span style="color: white;" class="word">访客Vistor &emsp;&emsp;&emsp;&emsp;&emsp;</span>
+			<img class="img" src="./photos/东软.jpg">	
+		</div>
+		<div class="box2">
+			<span style="color: white;" class="word">学生Student &emsp;&emsp;&emsp;&emsp;</span>
+			<img class="img" src="./photos/东软.jpg">
+		</div>
+	</body>
+</html>
