@@ -1,0 +1,49 @@
+
+
+
+<!DOCTYPE html>
+<html name="chenrui">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    var num=1,n=4,m=1;
+    for(var i=1;i<=4;i++)
+    {
+        if(i!=1)
+        {
+            num=num+2;
+        }
+        for(k=n;k>1;k--)
+        {
+            document.write('&ensp;')
+        }
+        n--;
+        for(var j=1;j<=num;j++)
+        {
+            document.write('*');
+        }
+        document.write('<br>')
+    }
+    for(var i=4;i>=1;i--)
+    {
+        if(i!=4)
+        {
+            for(k=1;k<=m;k++)
+            {
+                document.write('&ensp;')
+            }
+            m++;
+            num=num-2;
+            for(var j=1;j<=num;j++)
+            {
+                document.write('*');
+            }
+            document.write('<br>')
+        }
+    }
+</script>
+<body>
+</body>
+</html>
