@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	
+	<script>
+		function first()
+		{
+			myWindow=window.open('first.html','用户登录页面','width=500,height=300,left=499,top=300');
+			
+			
+			myWindow.focus();	
+		}
+		
+		function second()
+		{
+			myWindow=window.open('second.html','用户注册页面','width=500,height=300,left=499top=300');
+			
+			myWindow.focus();	
+		}
+	</script>
+	
+	<body>
+		<input type="button" onclick="first()" value="登录"/> |
+		<input type="button" onclick="second()" value="注册"/>
+	<p>这是主页面</p>
+	</body>
+</html>
+
