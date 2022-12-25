@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="start">
+			<input id="SUN" type="text">
+			<button id="copy" onclick="copy()">复制</button>
+			<input id="a" type="text"><br />
+			<span id="b" style="color:blue;"></span>
+		</div>
+	</body>
+	<script>
+		function copy() {
+			var sun = document.getElementById("SUN").value;
+			document.getElementById("a").value = sun;
+			document.getElementById("b").innerHTML = "复制成功";
+		}
+	</script>
+</html>
