@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<form>
+			姓名：<input type="text" name="userName" id="user"> <br>
+			密码：<input type="password" name="passwd" id="psw"><br>
+			性别：<input type="radio" name="sex" value="0" checked>男
+				 <input type="radio" name="sex" value="1">女<br>
+				 
+			血型：<input type="radio" name="Blood type" value="0" checked>O
+				<input type="radio" name="Blood type" value="1">A
+				<input type="radio" name="Blood type" value="2">B
+				<input type="radio" name="Blood type" value="3">AB <br>
+				
+			性格： <input type="checkbox" name="character" id="" value="0" />热情大方
+			<input type="checkbox" name="character" id="" value="1" />温柔体贴
+			<input type="checkbox" name="character" id="" value="2" />多情善感<br>
+			文件：<input type="txt" id="des"/>
+				 <input type="file" id="f" onchange="show()"/><br>
+			简介：<input type="text" ><br>
+			城市：<select name="" id="">
+				<option >北京市</option>
+				<option >上海市</option>
+				<option >成都市</option>
+				<option >绵阳市</option>
+        <option >都江堰市</option>
+				
+			</select><br>
+			<input type="button" value="提交" onclick="namex();pass()">
+			<input type="reset" value="重置">
+		</form>
+		<script>
+			function show(){
+			 document.getElementById("des").value = document.getElementById("f").value;
+			}
+			
+			function namex(){
+				var name1 = document.getElementById("user").value;
+				if(name1.length==0){
+					alert("用户名不得为空！");
+				}
+			}
+			function pass(){
+						var password = document.getElementById("psw").value;
+				
+							if(password.length<6){	
+								alert("输入的须大于六位");
+							}
+							else
+							{
+								alert("注册成功"+" "+"用户名："+(document.getElementById("user").value)+" "+"密码："+(document.getElementById("psw").value));
+							}
+						}
+			
+		</script>
+	</body>
+</html>
